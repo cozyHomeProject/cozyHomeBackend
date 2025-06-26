@@ -1,1 +1,1 @@
-rootProject.name = "ch"
+rootProject.name = "cozyHome-backend"
