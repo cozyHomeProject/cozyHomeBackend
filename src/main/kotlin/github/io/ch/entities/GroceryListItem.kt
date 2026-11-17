@@ -21,7 +21,7 @@ data class GroceryListItem(
     @JoinColumn(name = "grocery_id", nullable = false)
     val grocery: Grocery,
     val amount: String,
-    val lastOrderedAt: LocalDateTime,
+    val lastOrderedAt: LocalDateTime? = null,
     @ManyToOne
     @JoinColumn(name = "ordered_by_id", nullable = false)
     val orderedBy: User
