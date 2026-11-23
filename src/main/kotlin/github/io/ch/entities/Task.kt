@@ -24,5 +24,7 @@ data class Task(
     val modifiedAt: LocalDateTime,
     @ManyToOne
     @JoinColumn(name = "created_by_id", nullable = true)
-    val createdBy: User
+    val createdBy: User,
+    /** Cuándo se marcó como hecha por última vez; null = todavía no se hizo. */
+    val lastDoneAt: LocalDateTime? = null
 )
